@@ -1,4 +1,4 @@
-from transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer
+from transformers import AutoModelForTokenClassification, AutoTokenizer
 from transformers import BertForMaskedLM  
 
 model_neuralmind = BertForMaskedLM.from_pretrained('neuralmind/bert-base-portuguese-cased')
