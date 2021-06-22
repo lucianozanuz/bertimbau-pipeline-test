@@ -1,4 +1,4 @@
-pip install transformers
+!pip install transformers
 from transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer
 
 from transformers import BertForMaskedLM  
