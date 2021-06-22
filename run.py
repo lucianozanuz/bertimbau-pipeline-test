@@ -7,3 +7,4 @@ tokenizer_neuralmind = AutoTokenizer.from_pretrained('neuralmind/bert-base-portu
 
 pipe = pipeline('fill-mask', model=model_neuralmind, tokenizer=tokenizer_neuralmind)
 pipe('Tinha uma [MASK] no meio do caminho.')
+print(pipe)
