@@ -10,4 +10,4 @@ output = pipe('Tinha uma [MASK] no meio do caminho.')
 print(output)
 
 with open("output.txt", "w") as text_file:
-    text_file.write(output)
+    text_file.write("\n".join(output))
