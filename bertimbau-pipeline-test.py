@@ -11,3 +11,5 @@ print(output)
 
 with open('output.txt', 'w') as f:
     print(output, file=f)
+
+print(pipeline('fill-mask', model=model_neuralmind, tokenizer=tokenizer_neuralmind)('Eu moro em [MASK], Rio Grande do Sul.'))
