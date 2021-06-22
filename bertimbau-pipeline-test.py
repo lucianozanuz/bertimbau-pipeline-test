@@ -9,5 +9,5 @@ pipe = pipeline('fill-mask', model=model_neuralmind, tokenizer=tokenizer_neuralm
 output = pipe('Tinha uma [MASK] no meio do caminho.')
 print(output)
 
-with open("output.txt", "w") as text_file:
-    text_file.write("\n".join(output))
+with open('output.txt', 'w') as f:
+    print(output, file=f)
